@@ -50,6 +50,6 @@
                 <input type="number" name="txt_quantidade" id="quantidade" placeholder="Quantidade em estoque"> <br>
             </label>
         </form>
-    </div>
+    </div> sdadadwada
 </body>
 </html>
