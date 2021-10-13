@@ -10,7 +10,7 @@
     <title> Cadastro de produto </title>
 </head>
 <body>
-    <header>asddsadsadasdasdsadas
+    <header>
         <div id="menu">
             <nav>
                 <a href="prod_cadastrados.php" class="btn btn-outline-primary"> Produtos Cadastrados </a>
