@@ -5,10 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrep/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrep/css_js/css/style.css">
-
     <title> Cadastro de produto </title>
 </head>
+<style>
+#menu{
+    border: solid 2px;
+    height: 150px;
+    text-align: center;
+    background-color: rgb(51, 45, 75);
+}
+nav{
+    margin-top: 20px;
+}
+a{
+    margin: 10px;
+}
+#form{
+    border: solid 2px;
+    position: relative;
+    width: 710px;
+    margin: auto;
+    margin-top: 50px;
+}
+form{
+    width: 650px;
+    padding: 20px;
+}
+input{
+    size: 80px;
+}
+</style>
 <body>
     <header>
         <div id="menu">
@@ -50,8 +76,8 @@
                 <input type="number" name="txt_quantidade" id="quantidade" placeholder="Quantidade em estoque"  > <br>
             </label>
 
-            <button type="submit" class="btn btn-dark" value="Salvar"  > Enviar</button>
-            <button type="reset" class="btn btn-dark" value="Limpar"  >Limpar</button>
+            <button type="submit" class="btn btn-dark" value="Salvar"> Enviar</button>
+            <button type="reset" class="btn btn-dark" value="Limpar">Limpar</button>
 
             <br> <br>
 
