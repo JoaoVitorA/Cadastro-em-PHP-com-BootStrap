@@ -8,6 +8,16 @@
     <title> Cadastro de produto </title>
 </head>
 <style>
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("img/img_index.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 #menu{
     border: solid 2px;
     height: 150px;
