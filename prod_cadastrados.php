@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
     <link rel="stylesheet" href="bootstrep/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrep/css_js/css/style.css">
+    <title>Document</title>
 </head>
 <body style="background-color:pink;">
 
@@ -21,7 +19,7 @@
         ?>
   <header > 
         <nav>
-        <a href="index.php" class="btn btn-dark" >Voltar</a>
+            <a href="index.php" class="btn btn-dark" >Voltar</a>
         </nav> <br>
         <h1 style="text-align: center;"> Teste de conexão com o Banco de Dados</h1> <hr>    
     </header>
