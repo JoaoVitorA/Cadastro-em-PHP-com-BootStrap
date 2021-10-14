@@ -5,5 +5,5 @@
     $usuario = "root";
     $senha = "";
 
-    $conexao = mysqli_connect ($local_servidor, $usuario, $senha, $bd_procurado);
-?>
+    $conexao = new mysqli ($local_servidor, $usuario, $senha, $bd_procurado);
+?>  
