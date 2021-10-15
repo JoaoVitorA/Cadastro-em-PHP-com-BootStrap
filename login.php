@@ -75,13 +75,11 @@ h1{
     font-size: 13px;
     margin-top: 0;
     color: #000;
+
 }
 .center{
     display: flex;
     justify-content: center;
-}
-button{
-    margin-top: 15px;
 }
 hr{
     width: 60%;
@@ -132,7 +130,7 @@ img:hover{
     <form action="login.php" method="post">
         <div id="container">
             <div id="form">
-                <h1> Entrar</h1>
+                <h1> Entrar </h1>
 
                 <div class="lblFloat">
                     <input type="text" name="txt_usuario" class="input" placeholder="">
@@ -145,7 +143,7 @@ img:hover{
                 </div>
 
                 <div class="center">
-                    <button type="button" class="btn btn-outline-dark"> Entrar </button>
+                    <button type="button" class="btn btn-outline-dark" style="margin-top: 15px;"> Entrar </button>
                 </div>
 
                 <div class="center">

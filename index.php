@@ -18,36 +18,78 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-#menu{
+#header{
     border: solid 2px;
     height: 150px;
-    text-align: center;
     background-color: rgb(51, 45, 75);
 }
-nav{
-    margin-top: 20px;
-}
-a{
-    margin: 10px;
+#container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
 }
 #form{
-    border: solid 2px;
+    background-color: #d1626280;
+    padding: 30px;
+    border: solid;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 1px rgb(87, 83, 83)
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+}
+.input{
+    width: 400px;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #272262;
+    background-color: transparent;
+    outline: none;
+}
+.lblFloat{
     position: relative;
-    width: 710px;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.lblFloat input:focus{
+    border-bottom: 2px solid #3c53d6;
+}
+.lblFloat label{
+    color: #272262;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+.lblFloat input:focus + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #000;
+
+}
+.center{
+    display: flex;
     margin: auto;
-    margin-top: 50px;
+    justify-content: space-around;
+    width: 180px;
 }
-form{
-    width: 650px;
-    padding: 20px;
+#btn1{
+    width: 80px;
 }
-input{
-    size: 80px;
+#btn2{
+    width: 80px;
 }
 </style>
 <body>
     <header>
-        <div id="menu">
+        <div id="header">
             <nav>
                 <a href="prod_cadastrados.php" class="btn btn-outline-primary"> Produtos Cadastrados </a>
                 <a href="conexao_banco_mysql/teste_de_conexao.php" class="btn btn-outline-primary"> Teste de conexão  </a>
@@ -55,43 +97,52 @@ input{
             </nav>
         </div> 
     </header>
-    <div id="form" class="alert alert-secondary" role="alert">
-        <form method="POST" action="recebendo.php">
-            <small>Nome do produto</small> <br>
-            <label>
-                <input type="text" name="txt_nome" id="nome" placeholder="Nome do produto" > <br> <br>
-            </label>
-            <small>Nome do fabricante</small> <br>
-            <label>
-                <input type="text" name="txt_fabri" id="fabri" placeholder="Nome do fabricante"  > <br>
-            </label>
-            <small>Modelo do produto</small> <br>
-            <label>
-                <input type="text" name="txt_modelo" id="modelo" placeholder="Modelo do produto" > <br>
-            </label>
-            <small>Tamanho do produto</small> <br>
-            <label>
-                <input type="text" name="txt_tamanho" id="tamanho" placeholder="Tamanho do produto"  > <br>
-            </label>
-            <small>Data da fabricação</small> <br>
-            <label>
-                <input type="date" name="txt_data_fabri" id="data_fabri" placeholder="Data da fabricação"  > <br>
-            </label>
-            <small>Data do vencimento</small> <br>
-            <label>
-                <input type="date" name="txt_data_venc" id="data_venci" placeholder="Data do vencimento"  > <br>
-            </label>
-            <small>Quantidade em estoque</small> <br>
-            <label>
-                <input type="number" name="txt_quantidade" id="quantidade" placeholder="Quantidade em estoque"  > <br>
-            </label>
+    <form action="index.php" method="post">
+        <div id="container">
+            <div id="form">
+                <h1> Cadastrar </h1>
 
-            <button type="submit" class="btn btn-dark" value="Salvar"> Enviar</button>
-            <button type="reset" class="btn btn-dark" value="Limpar">Limpar</button>
+                <div class="lblFloat">
+                    <input type="text" name="txt_nome" class="input" placeholder="" >
+                    <label class="lbl"> Nome do produto </label>
+                </div>
 
-            <br> <br>
-        </form>
- 
-    </div>
+                <div class="lblFloat">
+                    <input type="text" name="txt_fabri" class="input" placeholder="" >
+                    <label class="lbl"> Nome do fabricante </label>
+                </div>
+
+                <div class="lblFloat">
+                    <input type="text" name="txt_modelo" class="input" placeholder="" >
+                    <label class="lbl"> Modelo do produto </label>
+                </div>
+
+                <div class="lblFloat">
+                    <input type="text" name="txt_tamanho" class="input" placeholder="">
+                    <label class="lbl"> Tamanho do produto </label>
+                </div>
+
+                <div class="lblFloat">
+                    <input type="text" name="txt_data_fabri" class="input" placeholder=""  >
+                    <label class="lbl"> Data da fabricação </label>
+                </div>
+
+                <div class="lblFloat">
+                    <input type="text" name="txt_data_venc" class="input" placeholder=""  >
+                    <label class="lbl"> Data do vencimento </label>
+                </div>
+
+                <div class="lblFloat">
+                    <input type="text" name="txt_quantidade" class="input" placeholder=""  >
+                    <label class="lbl"> Quantidade em estoque </label>
+                </div>
+                
+                <div class="center">
+                    <button type="submit" class="btn btn-dark" value="Salvar" id="btn1"> Enviar </button>
+                    <button type="reset" class="btn btn-dark" value="Limpar" id="btn2"> Limpar </button>
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
