@@ -90,8 +90,6 @@ input{
             <button type="reset" class="btn btn-dark" value="Limpar">Limpar</button>
 
             <br> <br>
-
-           sdadsadsadasdas
         </form>
  
     </div>
