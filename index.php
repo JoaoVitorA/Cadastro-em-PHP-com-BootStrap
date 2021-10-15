@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrep/css/bootstrap.min.css">
-    <title> Cadastro de produto </title>  dsadsadasdas
+    <title> Cadastro de produto </title>  
 </head> 
 <style>
 *{
