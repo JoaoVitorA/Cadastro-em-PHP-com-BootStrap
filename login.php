@@ -86,25 +86,39 @@ button{
 hr{
     width: 60%;
     margin-top: 5%;
-    margin-bottom: 10%;
     border-color: #3c53d6;
-
 }
 p{
     color: #272262;
     font-size: 14pt;
     text-align: center;
 }
-a{
-    color: #c490c4;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all .3s ease-out;
-}
-a:hover{
-    color: #0e0e0e;
-}
+#login ul{
+    padding: 0px;
+    margin: 0px;
+    list-style:none;
 
+}
+#login ul li { 
+    display: inline; 
+}
+#menu ul li a {
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    transition: all 1s ease;
+}
+img:hover{
+   height: 70px;
+   width: 70px;
+   border-radius: 70px;
+   transition: all .7s ease;
+  }
 </style>
 
 <body>
@@ -131,17 +145,51 @@ a:hover{
                 </div>
 
                 <div class="center">
-                    <button type="button" class="btn btn-outline-dark"> Entrar</button>
+                    <button type="button" class="btn btn-outline-dark"> Entrar </button>
                 </div>
 
                 <div class="center">
                     <hr>
                 </div>
 
-                <p>
-                    Não tem uma conta? 
-                    <a href="" id="cad"> Cadastre-se </a>
-                </p>
+                <div>
+                    <p>
+                        Ou entre com:
+                    </p>
+                </div>
+
+                <div style="text-align: center;"> 
+                    <nav id="login">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com" target="blank">
+                                    <img src="img/img_face.jpg">
+                                </a>
+                            </li>
+                            <li>                        
+                                <a href="https://www.instagram.com" target="blank">
+                                    <img src="img/img_insta.jpg" class="rounded-circle">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/i/flow/login" target="blank">
+                                    <img src="img/img_twitter.png" class="rounded-circle">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="center">
+                    <hr>
+                </div>
+
+                <div>
+                    <p>
+                        Não tem uma conta? 
+                        <a href="" id="cad"> Cadastre-se </a>
+                    </p>
+                </div>
             </div>
         </div>
     </form>
