@@ -35,8 +35,7 @@
     color: #9c97d4;
 }
     #container{
-        margin: 5%;
-        margin-top: 25%; 
+        margin: 5%; 
     }
     table tr{
         padding: 30px;
