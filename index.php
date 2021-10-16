@@ -36,7 +36,7 @@ a{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 #form{
     background-color: #d1626280;
@@ -161,5 +161,6 @@ input[type=date]:focus::-webkit-datetime-edit {
             </div>
         </div>
     </form>
+    <br> 
 </body>
 </html>
