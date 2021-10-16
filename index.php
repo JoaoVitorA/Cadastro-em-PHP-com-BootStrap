@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="bootstrep/css/bootstrap.min.css">
     <title> Cadastro de produtos </title>  
 </head> 
+<style>
 *{
     padding: 0;
     margin: 0;
@@ -56,6 +57,12 @@ h1{
     border-bottom: 2px solid #272262;
     background-color: transparent;
     outline: none;
+}
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
 }
 .lblFloat{
     position: relative;
@@ -132,17 +139,17 @@ h1{
                 </div>
 
                 <div class="lblFloat">
-                <input type="text" name="txt_data_fabri" class="input" placeholder="" required>
+                <input type="date" name="txt_data_fabri" class="input" placeholder="" required>
                     <label class="lbl"> Data da fabricação </label>
                 </div>
 
                 <div class="lblFloat">
-                <input type="text" name="txt_data_venc" class="input" placeholder="" required>
+                <input type="date" name="txt_data_venc" class="input" placeholder="" required id="date">
                     <label class="lbl"> Data do vencimento </label>
                 </div>
 
                 <div class="lblFloat">
-                <input type="text" name="txt_quantidade" class="input" placeholder="" required>
+                <input type="text" name="txt_quantidade" class="input" placeholder="" required id="date">
                     <label class="lbl"> Quantidade em estoque </label>
                 </div>
                 
