@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="bootstrep/css/bootstrap.min.css">
     <title> Cadastro de produtos </title>  
 </head> 
-<style>
 *{
     padding: 0;
     margin: 0;
