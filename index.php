@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrep/css/bootstrap.min.css">
-    <title> Cadastro de produto </title>  
+    <title> Cadastro de produtos </title>  
 </head> 
 <style>
 *{
@@ -22,6 +22,14 @@ body{
     border: solid 2px;
     height: 150px;
     background-color: rgb(51, 45, 75);
+    width: 100%;
+}
+nav{
+    margin-top: 5px;
+    margin-left: 5px
+}
+a{
+    margin: 5px;
 }
 #container{
     display: flex;
@@ -68,17 +76,18 @@ h1{
     margin-top: 13px;
     transition: all .3s ease-out;
 }
-.lblFloat input:focus + label{
+.lblFloat input:focus + label,
+.lblFloat input:valid + label{
     font-size: 13px;
     margin-top: 0;
     color: #000;
-
 }
 .center{
     display: flex;
     margin: auto;
     justify-content: space-around;
     width: 180px;
+    margin-top: 40px
 }
 #btn1{
     width: 80px;
@@ -91,49 +100,50 @@ h1{
     <header>
         <div id="header">
             <nav>
-                <a href="prod_cadastrados.php" class="btn btn-outline-primary"> Produtos Cadastrados </a>
-                <a href="conexao_banco_mysql/teste_de_conexao.php" class="btn btn-outline-primary"> Teste de conexão  </a>
-                <a href="login.php" class="btn btn-outline-primary"> Login </a>
+                <a href="prod_cadastrados.php" class="btn btn-dark"> Produtos Cadastrados </a>
+                <a href="conexao_banco_mysql/teste_de_conexao.php" class="btn btn-dark"> Teste de conexão  </a>
+                <a href="login.php" class="btn btn-dark"> Login </a>
             </nav>
+            <h1 style="color: #9c97d4;"> Cadastro de produto </h1>
         </div> 
     </header>
-    <form action="index.php" method="post">
+    <form method="POST" action="recebendo.php">
         <div id="container">
             <div id="form">
                 <h1> Cadastrar </h1>
 
                 <div class="lblFloat">
-                    <input type="text" name="txt_nome" class="input" placeholder="" >
+                <input type="text" name="txt_nome" class="input" placeholder="" required>
                     <label class="lbl"> Nome do produto </label>
                 </div>
 
                 <div class="lblFloat">
-                    <input type="text" name="txt_fabri" class="input" placeholder="" >
+                <input type="text" name="txt_fabri" class="input" placeholder="" required>
                     <label class="lbl"> Nome do fabricante </label>
                 </div>
 
                 <div class="lblFloat">
-                    <input type="text" name="txt_modelo" class="input" placeholder="" >
+                <input type="text" name="txt_modelo" class="input" placeholder="" required>
                     <label class="lbl"> Modelo do produto </label>
                 </div>
 
                 <div class="lblFloat">
-                    <input type="text" name="txt_tamanho" class="input" placeholder="">
+                <input type="text" name="txt_tamanho" class="input" placeholder="" required>
                     <label class="lbl"> Tamanho do produto </label>
                 </div>
 
                 <div class="lblFloat">
-                    <input type="text" name="txt_data_fabri" class="input" placeholder=""  >
+                <input type="text" name="txt_data_fabri" class="input" placeholder="" required>
                     <label class="lbl"> Data da fabricação </label>
                 </div>
 
                 <div class="lblFloat">
-                    <input type="text" name="txt_data_venc" class="input" placeholder=""  >
+                <input type="text" name="txt_data_venc" class="input" placeholder="" required>
                     <label class="lbl"> Data do vencimento </label>
                 </div>
 
                 <div class="lblFloat">
-                    <input type="text" name="txt_quantidade" class="input" placeholder=""  >
+                <input type="text" name="txt_quantidade" class="input" placeholder="" required>
                     <label class="lbl"> Quantidade em estoque </label>
                 </div>
                 

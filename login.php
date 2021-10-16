@@ -37,7 +37,8 @@ body{
     padding: 30px;
     border: solid;
     border-radius: 4%;
-    box-shadow: 3px 3px 1px 1px rgb(87, 83, 83)
+    box-shadow: 3px 3px 1px 1px rgb(87, 83, 83);
+    
 }
 h1{
     text-align: center;
@@ -71,11 +72,11 @@ h1{
     margin-top: 13px;
     transition: all .3s ease-out;
 }
-.lblFloat input:focus + label{
+.lblFloat input:focus + label,
+.lblFloat input:valid + label{
     font-size: 13px;
     margin-top: 0;
     color: #000;
-
 }
 .center{
     display: flex;
@@ -125,6 +126,7 @@ img:hover{
             <nav>
                 <a href="index.php" class="btn btn-dark" style="margin-top: 5px; margin-left:5px;"> Voltar </a>
             </nav>
+            <h1 style="color: #9c97d4;"> Login </h1>
         </div>
     </header>
     <form action="login.php" method="post">
@@ -133,12 +135,12 @@ img:hover{
                 <h1> Entrar </h1>
 
                 <div class="lblFloat">
-                    <input type="text" name="txt_usuario" class="input" placeholder="">
+                    <input type="text" name="txt_usuario" class="input" placeholder="" required>
                     <label class="lbl"> Usuário </label>
                 </div>
 
                 <div class="lblFloat">
-                    <input type="password" name="txt_senha" class="input" placeholder="">
+                    <input type="password" name="txt_senha" class="input" placeholder="" required>
                     <label class="lbl"> Senha </label>
                 </div>
 

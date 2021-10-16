@@ -21,7 +21,23 @@
     color: #fff
 }
 body{
-    background-color: #50C7C7;
+    background-image: url("../img/img_bd.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9c97d4;
+}
+#corpo{
+    margin-top: 150px;
+}
+.btn_div{
+    text-align: center;
+    padding-top: 30px;
+
 }
 </style>
 
@@ -30,28 +46,28 @@ body{
         <div id="header">
             <nav>
                 <a href="../index.php" class="btn btn-dark" style="margin-top: 5px; margin-left:5px;"> Voltar </a>
-            </nav>
-            <h1 style="text-align: center;"> Teste de conexão com o Banco de Dados</h1> 
+            </nav> 
+            <h1> Teste de conexão com o Banco de Dados</h1>
         </div>
     </header>
-    <div>
+    <div id="corpo">
         <?php    
             include ('conexao.php');
             //teste de conexão com banco de dados
 
             if($conxao = mysqli_connect($local_servidor, $usuario, $senha))
             {
-                echo " <div style='text-align: center;'> <button class='btn btn-success'>  Servidor de Banco de Dados conectado com sucesso </button> <br> <br/> </div>"; 
+                echo " <div class='btn_div'> <button class='btn btn-success'>  Servidor de Banco de Dados conectado com sucesso </button> </div>"; 
             }
             else 
-                echo "<div style='text-align: center;'> <button class='btn btn-success'> Servidor não encontrado  </button> <br/> </div>" ;
+                echo "<div class='btn_div'> <button class='btn btn-success'> Servidor não encontrado  </button> </div>" ;
 
                 if($conxao = mysqli_connect ($local_servidor, $usuario, $senha,  $bd_procurado))
                 {
-                    echo "<div style='text-align: center;'> <button class='btn btn-success'> Banco de Dados conectado com sucesso </button> <br/> </div>"; 
+                    echo "<div class='btn_div'> <button class='btn btn-success'> Banco de Dados conectado com sucesso </button> </div>"; 
                 }
                 else 
-                    echo "<div style='text-align: center;'> <button class='btn btn-success'> Banco de Dados desconectado </button>  <br/> </div>";
+                    echo "<div class='btn_div'> <button class='btn btn-success'> Banco de Dados desconectado </button> </div>";
         ?>
     </div>
 </body>
