@@ -111,7 +111,7 @@ input[type=date]:focus::-webkit-datetime-edit {
                 <a href="conexao_banco_mysql/teste_de_conexao.php" class="btn btn-dark"> Teste de conexão  </a>
                 <a href="login.php" class="btn btn-dark"> Login </a>
             </nav>
-            <h1 style="color: #9c97d4;"> Cadastro de produto </h1>
+            <h1 style="color: #9c97d4;"> Cadastro de produtos </h1>
         </div> 
     </header>
     <form method="POST" action="recebendo.php">
